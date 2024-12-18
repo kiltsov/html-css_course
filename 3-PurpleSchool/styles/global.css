@@ -1,0 +1,70 @@
+:root {
+    --color-primary: #6C38CC;
+    --color-primary-hover: #5312cc;
+    --color-transparent: transparent;
+    --color-text: #FAFAFA;
+    --color-link-hover: #AFB2BF;
+    --color-bg: #16171D;
+    --color-bg-mebium: #1E1F29;
+    --color-bg-light: #2E2D3D;
+
+    --color-stroke: #4D5064;
+    --border-8: 0.5rem;
+
+}
+
+html { font-size: calc(0.000004098360655624411rem + 1.0581967213114756vw); }
+@media screen and (max-width:1512px) { html { font-size: calc(0.000004098360655624411rem + 1.0581967213114756vw); } }
+@media screen and (max-width:1024px) { html { font-size: calc(0.00006250000000052047rem + 2.083203124999999vw); } }
+@media screen and (max-width:768px) { html { font-size: calc(-0.000027681660899947502rem + 2.0833910034602083vw); } }
+@media screen and (max-width:479px) { html { font-size: calc(-0.000021008403361610917rem + 4.4445378151260515vw); } }
+@media screen and (max-width:360px) { html { font-size: calc(-0.0027855153203342614rem + 4.456824512534818vw); } }
+
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+    font-family: "Fira Sans", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: var(--color-text);
+}
+
+.section {
+    display: block;
+}
+
+.padding-global {
+    padding-left: 9.125rem;
+    padding-right: 9.125rem;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: auto auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/************** Tablet Adaptive **************/
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    .padding-global {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/************** Mobile Adaptive **************/
+
+@media (max-width: 479px) {
+    .padding-global {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}

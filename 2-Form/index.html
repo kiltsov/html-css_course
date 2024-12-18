@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-    <link rel="stylesheet" href="./slyles/slyle.css" />
-  </head>
-  <body>
-    <main>
-      <section>
-        <h1>Свяжитесь со мной</h1>
-        <form action="#" method="get">
-          <div>
-            <label for="email">Введите E-mail</label>
-            <input type="email" id="email" name="email" required />
-          </div>
 
-          <div>
-            <label for="telegram">Ваш телеграм</label>
-            <input type="text" id="telegram" name="telegram" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
 
-          <div>
-            <select name="theme" id="theme">
-              <option value="1" selected>Приобретение курсов</option>
-              <option value="2">Заказ курсов</option>
-              <option value="2">Ведение курсов</option>
-            </select>
-          </div>
+<body>
+  <main>
+    <section>
+      <div class="container">
+        <div class="form_component">
+          <h1>Свяжитесь со мной</h1>
+          <form action="#" method="get">
+            <div>
+              <label for="email">Введите E-mail</label>
+              <input type="email" id="email" name="email" required />
+            </div>
 
-          <div>
-            <textarea
-              name="comment"
-              id="comment"
-              placeholder="Комментарий"
-              rows="10"
-              cols="30"
-            ></textarea>
-          </div>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
-    </main>
-  </body>
+            <div>
+              <label for="telegram">Ваш телеграм</label>
+              <input type="text" id="telegram" name="telegram" />
+            </div>
+
+            <div>
+              <select name="theme" id="theme">
+                <option value="1" selected>Приобретение курсов</option>
+                <option value="2">Заказ курсов</option>
+                <option value="2">Ведение курсов</option>
+              </select>
+            </div>
+
+            <div>
+              <textarea name="comment" id="comment" placeholder="Комментарий" rows="10" cols="30"></textarea>
+            </div>
+            <button type="submit" id="button_submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
