@@ -1,12 +1,17 @@
 :root {
     --color-primary: #6C38CC;
     --color-primary-hover: #5312cc;
+
     --color-transparent: transparent;
     --color-text: #FAFAFA;
     --color-link-hover: #AFB2BF;
+
     --color-bg: #16171D;
+    --color-bg-footer: #101114;
     --color-bg-mebium: #1E1F29;
     --color-bg-light: #2E2D3D;
+
+    --color-text-label: #E47AD5;
 
     --color-stroke: #4D5064;
     --border-8: 0.5rem;
@@ -31,6 +36,10 @@ body {
     color: var(--color-text);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .section {
     display: block;
 }
@@ -51,9 +60,26 @@ a {
     text-decoration: none;
 }
 
+svg {
+    display: block; /* делает svg блочным элементом */
+    width: 100%;
+    height: 100%;
+    margin: auto; /* центрирует svg внутри родительского контейнера */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /************** Tablet Adaptive **************/
 
 @media (min-width: 480px) and (max-width: 1024px) {
+    /* *:hover {
+        all: unset;
+    } */
+
     .padding-global {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -63,6 +89,10 @@ a {
 /************** Mobile Adaptive **************/
 
 @media (max-width: 479px) {
+    /* *:hover {
+        all: unset;
+    } */
+
     .padding-global {
         padding-left: 1.5rem;
         padding-right: 1.5rem;

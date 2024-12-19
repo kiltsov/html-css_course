@@ -32,7 +32,6 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 /************** Buttons **************/
@@ -70,9 +69,31 @@ p {
     background: var(--color-bg-light);
 }
 
-/************** Other **************/
+/************** Social Links **************/
 
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.875rem;
+    height: 2.875rem;
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-8);
+    padding: 0.75rem 0.75rem;
+    color: var(--color-text);
+}
 
+.social-link:hover {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-stroke);
+    color: var(--color-stroke);
+}
+
+.icon-social {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--color-text);
+}
 
 /************** Tablet Adaptive **************/
 
